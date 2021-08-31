@@ -13,7 +13,19 @@
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 	</head>
 	<body class="is-preload">
-
+<head>
+    <meta charset="UTF-8">
+    <script type="text/javascript">
+        function copyLink(){
+		   let input = document.querySelector('#demoInput');
+            var e = document.getElementById("copy");
+            let data =  input.select(); // 选择对象
+            document.execCommand("Copy"); // 执行浏览器复制命令
+        }
+    </script>
+</head>
+<input id="demoInput" value="18688798140" type="text" style='opacity: 0;position: absolute;' >
+<input v-model='product_url' disabled type="text">
 		<!-- Wrapper -->
 			<div id="wrapper" class="fade-in">
 
@@ -23,7 +35,8 @@
 						</h1> <h2>很高兴认识你</h2>
 						<h3>
 						<p>我叫王永仲</p>
-						<p>我的电话：</p><input type="text" id="url" value="18688798140" style="text-align:center;">
+						<p>我的电话：</p><input type="text" id="copy" value="18688798140" style="text-align:center;">
+						
 						<h3>
 						
 						<ul class="actions">
@@ -58,19 +71,8 @@
 								<header class="major">
 									<span class="date"><h3>我的联络方式</h3></span>
 									<h2><a href="tel:18688798140" target="_self"><img src="tel.png" width="127" height="128" alt=""></a><a href=" https://v.douyin.com/" target="_self"><img src="douyin.png" width="130" height="128" alt=""></a><a href="sms://18688798140" target="_self"><img src="chat.png" width="130" height="128" alt=""></a><a href="https://space.bilibili.com" target="_self"><img src="bi.jpg" width="130" height="128" alt=""></a><a href="weixin://" target="_self"><img src="weixin.png" width="127" height="128" alt=""></a></h2>
-<head>
-    <meta charset="UTF-8">
-    <script type="text/javascript">
-        function copyLink(){
-            var e = document.getElementById("186887");
-            e.select(); // 选择对象
-            document.execCommand("Copy"); // 执行浏览器复制命令
-        }
-    </script>
-</head>
-<body>
-<a href="weixin://" onClick="url.select();document.execCommand('Copy')" target="_self"><img src="weixin1.png"  width="127" height="128" alt=""></a>
-</body>
+
+<a href="weixin://" onclick="copyLink();" target="_self"><img src="weixin1.png"  width="127" height="128" alt=""></a>
 <h2>&nbsp;</h2>
 
 
