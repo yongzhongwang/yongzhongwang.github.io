@@ -21,7 +21,11 @@
 					<div id="intro">
 						<h1>你好<br />
 						</h1> <h2>很高兴认识你</h2>
-						<h3><p>我叫王永仲</p><h3>
+						<h3>
+						<p>我叫王永仲</p>
+						<p>我的电话：</p><input type="text" id="url" value="18688798140" style="text-align:center;">
+						<h3>
+						
 						<ul class="actions">
 							<li><a href="#header" class="button icon solid solo fa-arrow-down scrolly">Continue</a></li>
 						</ul>
@@ -54,13 +58,21 @@
 								<header class="major">
 									<span class="date"><h3>我的联络方式</h3></span>
 									<h2><a href="tel:18688798140" target="_self"><img src="tel.png" width="127" height="128" alt=""></a><a href=" https://v.douyin.com/" target="_self"><img src="douyin.png" width="130" height="128" alt=""></a><a href="sms://18688798140" target="_self"><img src="chat.png" width="130" height="128" alt=""></a><a href="https://space.bilibili.com" target="_self"><img src="bi.jpg" width="130" height="128" alt=""></a><a href="weixin://" target="_self"><img src="weixin.png" width="127" height="128" alt=""></a></h2>
-									<h2><a href="weixin://contacts/profile/18688798140" onClick="copyUrl()" target="_self "><img src="weixin1.png" width="127" height="128" alt=""></a></h2>
+<head>
+    <meta charset="UTF-8">
+    <script type="text/javascript">
+        function copyLink(){
+            var e = document.getElementById("186887");
+            e.select(); // 选择对象
+            document.execCommand("Copy"); // 执行浏览器复制命令
+        }
+    </script>
+</head>
+<body>
+<a href="weixin://" onClick="url.select();document.execCommand('Copy')" target="_self"><img src="weixin1.png"  width="127" height="128" alt=""></a>
+</body>
+<h2>&nbsp;</h2>
 
-<input type="text" size="30" id="url" value="18688798140">
-<a onClick="url.select();document.execCommand('Copy')" href="weixin://"  target="_self "><img src="weixin1.png" width="127" height="128" alt=""></a>
-
-									<h2>&nbsp;</h2>
-									
 
 
 		<!-- Scripts -->
